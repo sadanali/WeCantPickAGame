@@ -1,6 +1,7 @@
 ﻿using Prism.DryIoc;
 using Prism.Ioc;
 using System.Windows;
+using WeCantPickAGame.Views;
 
 namespace WeCantPickAGame
 {
@@ -8,12 +9,11 @@ namespace WeCantPickAGame
     {
         protected override Window CreateShell()
         {
-            throw new System.NotImplementedException();
+            return Container.Resolve<ShellWindow>();
         }
 
         protected override void RegisterTypes( IContainerRegistry containerRegistry )
         {
-            throw new System.NotImplementedException();
         }
     }
 }
