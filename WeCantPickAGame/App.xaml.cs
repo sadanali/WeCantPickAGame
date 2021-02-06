@@ -1,17 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Prism.DryIoc;
+using Prism.Ioc;
 using System.Windows;
 
 namespace WeCantPickAGame
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
-    public partial class App : Application
+    public partial class App : PrismApplication
     {
+        protected override Window CreateShell()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        protected override void RegisterTypes( IContainerRegistry containerRegistry )
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
